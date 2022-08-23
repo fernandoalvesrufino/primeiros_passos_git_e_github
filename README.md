@@ -1,1 +1,1 @@
-# Bem vindo aos primeiros passos no git e github
+# Bem vindo aos primeiros passos no Git e GitHub
