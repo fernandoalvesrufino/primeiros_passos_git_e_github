@@ -1,15 +1,29 @@
 # Bem vindo aos primeiros passos no Git e GitHub
 
+# Índice
+- [O que é Git?](#o-que-é-git)
+- [O que é GitHub?](#o-que-é-github)
+- [O que é um Repositório?](#o-que-é-um-repositório)
+- [Instalando o Git no Windows](#instalando-o-git-no-windows)
+- [Como criar um repositório?](#como-criar-um-repositório)
+
+## O que é Git?
+Git é um Sistema de Controle de Versões. Traduzindo... o GIT tem a função de registrar qualquer alteração feita em cima de um código. O Git armazena essas informações (armazena todas as mudanças e alterações feitas no código) e permite que, caso desejar, um(a) programador(a) possa voltar a versões anteriores de uma aplicação de modo simples e rápido. 
+
+## O que é GitHub?
+GitHub é uma plataforma de hospedagem e gerenciamento de repositórios. Pode ser de forma privada (onde só nós teremos acesso) ou publica (onde todos que desejarem poderão ter acesso).
+
 ## O que é um Repositório?
+É um lugar (diretório) onde podemos armazenar, ou colocar, os nossos arquivos e projetos. 
 
-É o local onde os arquivos e projetos ficam armazenados. Quando nós iniciamos um projeto com git estamos criando um repositório para aquele projeto. Podemos trabalhar offline, voltar para uma versão anterior, enviar para um servidor (Ex: GitHub). 
-GitHub - é uma hospedagem para gerenciamento de repositórios. Pode ser de forma privada ou publica.
+## Instalando o Git no Windows
+Para instalar o Git no Windows, eu recomendo que você siga o passo a passo descrito no site [dicas de programacao](https://dicasdeprogramacao.com.br/como-instalar-o-git-no-windows/). Lá já está tudo detalhado de como fazer.
 
-O primeiro passo é INICIAR o repositório. Para isso usamos o comando:
+## Como criar um repositório?
+O primeiro passo é INICIAR o repositório. O jeito mais fácil de fazer isso é:
+- Depois de instalado o Git no seu PC, crie uma pasta para seus projetos. Em seguida, crie outra pasta com o nome 'projeto_1' e acesse a pasta. Clique com o botão direito do mouse dentro da pasta e selecione a opção Git Bash Here (Ou acesse a pasta através do CMD do Windows). A partid daí, digite o comando:
 ```
 git init
 ```
-Assim iniciamos um repositório da pasta que digitamos o comando. A partir daí, o Git vai reconhecer todas os arquivos dessa pasta como um projeto.
+Assim um repositório é iniciado. A partir daí, o Git vai reconhecer todas os arquivos dessa pasta como um projeto. Após dado o comando acima é criado um arquivo oculto chamado '.git'
 
-## Como fazer?
-Com o git já instalado no PC, é so acessar a pasta através do CMD e digitar o comando acima.
