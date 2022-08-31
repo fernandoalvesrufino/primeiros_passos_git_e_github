@@ -23,7 +23,7 @@ Para instalar o Git no Windows, eu recomendo que você siga o passo a passo desc
 O primeiro passo é INICIAR o repositório. O jeito mais fácil de fazer isso é:
 - Depois de instalado o Git no seu PC, crie uma pasta para seus projetos. 
 - Em seguida, crie outra pasta com o nome 'projeto_1' e acesse a pasta. 
-- Clique com o botão direito do mouse dentro da pasta e selecione a opção Git Bash Here (Ou acesse a pasta através do CMD do Windows). A partid daí, digite o comando:
+- Clique com o botão direito do mouse dentro da pasta e selecione a opção Git Bash Here (Ou acesse a pasta através do CMD do Windows). A partir daí, digite o comando:
 ```
 git init
 ```
