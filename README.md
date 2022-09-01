@@ -75,4 +75,4 @@ git commit -m "Commitando todos os arquivos de uma vez"
 ```
 ## Como enviar o arquivo para o repositório remoto?
 
-Após ter criado uma conta no GitHub, clique no + ao lado da sua foto de perfil no canto superior direito, depois em 'New Repository'.
+Após ter criado uma conta no GitHub, clique no + ao lado da sua foto de perfil no canto superior direito, depois em 'New Repository'. Digite um nome (de preferencia com letras minusculas, sem espaços e sem acentos), role a página para baixo e clique em criar repositório.
