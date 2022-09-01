@@ -6,6 +6,7 @@
 - [O que é um Repositório?](#o-que-é-um-repositório)
 - [Instalando o Git no Windows](#instalando-o-git-no-windows)
 - [Como criar um repositório?](#como-criar-um-repositório)
+- [Como enviar o arquivo para o repositório remoto?](#como-enviar-o-arquivo-para-o-repositório-remoto)
 
 ## O que é Git?
 ![git](https://embarcados.com.br/wp-content/uploads/2015/02/imagem-de-destaque-39.png)
@@ -18,7 +19,7 @@ Git é um Sistema de Controle de Versões. Traduzindo... o GIT tem a função de
 GitHub é uma plataforma de hospedagem e gerenciamento de repositórios. Pode ser de forma privada (onde só nós teremos acesso) ou publica (onde todos que desejarem poderão ter acesso).
 
 ## O que é um Repositório?
-É um lugar (diretório) onde podemos armazenar, ou colocar, os nossos arquivos e projetos. 
+É um lugar (diretório) onde podemos armazenar, ou colocar, os nossos arquivos e projetos. O Git é o repositório LOCAL, odemos acessar no nosso próprio PC. O GitHub é o repositório REMOTO, podemos acessar em qualquer lugar com acesso à internet.
 
 ## Instalando o Git no Windows
 Para instalar o Git no Windows, eu recomendo que você siga o passo a passo descrito no site [dicas de programacao](https://dicasdeprogramacao.com.br/como-instalar-o-git-no-windows/). Lá já está tudo detalhado de como fazer.
@@ -33,3 +34,32 @@ git init
 ```
 Assim um repositório é iniciado. A partir daí, o Git vai reconhecer todas os arquivos dessa pasta como um projeto. Após dado o comando acima é criado um arquivo oculto chamado '.git'
 
+## Adicionando arquivos ao repositório
+Podemos fazer isso através da IDE (ambiente de desenvolvimento integrado, o programa usado para escrever os códigos). Podemos abrir a pasta onde iniciamos o repositório (no exemplo dado anteriormente, a pasta chamada 'projeto_1') na nossa IDE. 
+
+Então vamos usar a nossa IDE para criar novos arquivos. Clique com o botão direito do mouse como indicado na imagem abaixo:
+![vscode - novo arquivo](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9A-fLPKa8etiw8WB-aa8BYMCrOfrVOOdh2qvbSrrUTQ&s)
+
+e então, clique em novo arquivo e digite 'nome.txt'
+OBS: É necessário colocar o .txt nesse caso (a extensão, ou formato do arquivo). No caso de um arquivo de texto: '.txt', no caso de um código em python '.py', e quando formos criar nosso README '.md' (mais pra frente falamos disso.)
+Agora dentro da área à direita (no caso do VSCode) é só digitar algo. Vamos digitar 'Elon Musk'.
+
+## Como enviar o arquivo para o repositório remoto?
+
+Abrindo o CMD (opção TERMINAL > NOVO TERMINAL) digite o comando:
+```
+git status
+```
+Esse comando fará com que sejam apresentados todos os arquivos que existem no repositório (no caso 'nomes.txt').
+
+Para que esse arquivo seja monitorado (trackeado) digite o comando:
+```
+git add nome.txt
+\\ git add (nome_do_arquivo.formato)
+```
+A partir daqui o arquivo está esperando para ser commitado (enviado do repositório LOCAL para o repositório REMOTO). Se eu modificar o arquivo novamente, ao verificar o status ('git status') é indicado que o arquivo foi modificado e que está esperando para ser trackeado (então, seria necessário dar um 'git add nome_do_arquivo.formato' novamente).
+
+Mas caso tenham sido feitas várias criações de arquivos e várias modificações, é possível digitar um comando que fará com que todas as alterações passem a ser monitoradas (trackeadas):
+```
+git add .
+```
