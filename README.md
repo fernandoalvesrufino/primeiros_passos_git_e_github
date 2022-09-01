@@ -96,7 +96,7 @@ Depois digite o comando:
 ```
 git push -u origin master
 ```
-Pronto! Seu arquivo 'nome.txt' foi enviado para o GitHub. 
+Pronto! Seu arquivo 'nome.txt' foi enviado para o GitHub. Na verdade, tudo o que foi commitado será enviado.
 A partir daí, sempre que quiser enviar arquivos para o GitHub é só digitar o comando:
 ```
 git push
