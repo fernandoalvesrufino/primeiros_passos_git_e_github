@@ -75,4 +75,29 @@ git commit -m "Commitando todos os arquivos de uma vez"
 ```
 ## Como enviar o arquivo para o repositório remoto?
 
-Após ter criado uma conta no GitHub, clique no + ao lado da sua foto de perfil no canto superior direito, depois em 'New Repository'. Digite um nome (de preferencia com letras minusculas, sem espaços e sem acentos), role a página para baixo e clique em criar repositório.
+Após ter criado e acessado sua conta no GitHub, clique no + ao lado da sua foto de perfil no canto superior direito, depois em 'New Repository'. 
+Digite um nome (Ex: 'projeto_1' - crie um nome de preferência com letras minusculas, sem espaços e sem acentos) e uma descrição para o repositório, e clique em criar repositório (create repository). O repositório foi criado, só que ainda está vazio.
+
+Na próxima página, é apresentado o passo a passo para conseguir enviar as informações do repositório local para o remoto. Primeiro, é mostrado o processo desde o início (mas nós já fizemos). Então, é só seguir a segunda opção. No CMD digitar o comando: 
+```
+git remote add origin git@github.com:seu_nome_de_perfil/projeto_1.git'
+```
+Basicamente o que estamos dizendo nessa linha de comando é:
+"Git, esse meu repositório local se conectará com um remoto, o caminho dele(origin) é git@github.com:gabsferreira/postsdoblog.git. Estabeleça essa comunicação pra mim".
+
+Se você abrir aquele arquivo .git dentro da sua pasta 'projeto_1' do seu PC vai encontrar:
+```
+[remote "origin"]
+    url = git@github.com:seu_nome_de_perfil/projeto_1.git
+    fetch = +refs/heads/*:refs/remotes/origin/*
+```
+
+Depois digite o comando:
+```
+git push -u origin master
+```
+Pronto! Seu arquivo 'nome.txt' foi enviado para o GitHub. 
+A partir daí, sempre que quiser enviar arquivos para o GitHub é só digitar o comando:
+```
+git push
+```
