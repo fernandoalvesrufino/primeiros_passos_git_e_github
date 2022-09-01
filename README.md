@@ -44,8 +44,6 @@ e então, clique em novo arquivo e digite 'nome.txt'
 OBS: É necessário colocar o .txt nesse caso (a extensão, ou formato do arquivo). No caso de um arquivo de texto: '.txt', no caso de um código em python '.py', e quando formos criar nosso README '.md' (mais pra frente falamos disso.)
 Agora dentro da área à direita (no caso do VSCode) é só digitar algo. Vamos digitar 'Elon Musk'.
 
-## Como enviar o arquivo para o repositório remoto?
-
 Abrindo o CMD (opção TERMINAL > NOVO TERMINAL) digite o comando:
 ```
 git status
@@ -57,9 +55,24 @@ Para que esse arquivo seja monitorado (trackeado) digite o comando:
 git add nome.txt
 \\ git add (nome_do_arquivo.formato)
 ```
-A partir daqui o arquivo está esperando para ser commitado (enviado do repositório LOCAL para o repositório REMOTO). Se eu modificar o arquivo novamente, ao verificar o status ('git status') é indicado que o arquivo foi modificado e que está esperando para ser trackeado (então, seria necessário dar um 'git add nome_do_arquivo.formato' novamente).
+A partir daqui o arquivo está esperando para ser commitado (salvo no repositório). Se eu modificar o arquivo novamente, ao verificar o status ('git status') é indicado que o arquivo foi modificado e que está esperando para ser trackeado (então, seria necessário dar um 'git add nome_do_arquivo.formato' novamente).
 
 Mas caso tenham sido feitas várias criações de arquivos e várias modificações, é possível digitar um comando que fará com que todas as alterações passem a ser monitoradas (trackeadas):
 ```
 git add .
 ```
+Para commitar os arquivos (ou salvar os arquivos no repositório) digitamos o comando:
+- Commitar um arquivo único:
+```
+git commit nome.txt -m "Estou criando um arquivo de nomes"
+\\ OBS: Não utilize acentuação na mensagem
+```
+Note que é possível adicionar uma mensagem após o comando do commit. Essa mensagem é importante para descrever o que foi feito no arquivo editado. Caso tenhamos mais de um arquivo, com esse comando estamos commitando apenas o arquivo 'nome.txt'. Os demais ainda ficariam aguardando para serem commitados. 
+
+- Para commitar todos os arquivos de uma vez utilize o comando:
+```
+git commit -m "Commitando todos os arquivos de uma vez"
+```
+## Como enviar o arquivo para o repositório remoto?
+
+Após ter criado uma conta no GitHub, clique no + ao lado da sua foto de perfil no canto superior direito, depois em 'New Repository'.
