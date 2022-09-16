@@ -38,6 +38,7 @@ Assim um repositório é iniciado. A partir daí, o Git vai reconhecer todas os 
 Podemos fazer isso através da IDE (ambiente de desenvolvimento integrado, o programa usado para escrever os códigos). Podemos abrir a pasta onde iniciamos o repositório (no exemplo dado anteriormente, a pasta chamada 'projeto_1') na nossa IDE. 
 
 Então vamos usar a nossa IDE para criar novos arquivos. Clique com o botão direito do mouse como indicado na imagem abaixo:
+
 ![vscode - novo arquivo](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9A-fLPKa8etiw8WB-aa8BYMCrOfrVOOdh2qvbSrrUTQ&s)
 
 e então, clique em novo arquivo e digite 'nome.txt'
